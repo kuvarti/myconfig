@@ -3,6 +3,7 @@
 if [ -z "$(cat ~/.zshrc | grep vim=\'nvim\')" ]
 then
 	echo "alias vim='nvim'" >> ~/.zshrc
+	source ~/.zshrc
 fi
 mkdir -p ~/.config/nvim
 if [ -f ~/.config/nvim/init.vim ]
@@ -11,7 +12,8 @@ then
 fi
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 
-cp ~/.vimrc ./vimrc.background
+mkdir -p ~/.tmp
+cp ~/.vimrc ~/.tpm/vimrc.background
 cp ./.vimrc ~/.vimrc
 
 echo "Its Done!"
