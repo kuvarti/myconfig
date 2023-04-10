@@ -17,3 +17,5 @@ cp ~/.vimrc ~/.tpm/vimrc.background
 cp ./.vimrc ~/.vimrc
 
 echo "Its Done!"
+
+# ITS gonna come tmux
