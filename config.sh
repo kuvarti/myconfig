@@ -13,3 +13,5 @@ ln -s ~/.vimrc ~/.config/nvim/init.vim
 
 cp ~/.vimrc ./vimrc.background
 cp ./.vimrc ~/.vimrc
+
+echo "Its Done!"
